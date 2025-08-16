@@ -1,0 +1,91 @@
+Create a STATIC website (no backend) for my travel brand “Dream W Travel”.
+Project files: index.html, style.css, script.js, and an assets/ folder for images (I’ll upload the logo).
+
+Brand
+	•	Brand: Dream W Travel
+	•	Tagline: “Explore the World, Live Your Dream”
+	•	Logo: I will upload a PNG/SVG. Place it in the header left of the brand name. Align horizontally; logo height ≈ 50px; keep it crisp on mobile.
+
+Design & Style
+	•	Friendly, inclusive, practical. Highlight comfort, value, and family-friendly travel.
+	•	Hero background: full-width sky + ocean image.
+	•	Hero text: on a semi-transparent soft white panel for readability.
+	•	Primary text color: black on light backgrounds.
+	•	Footer: black background with white text.
+	•	Typography: clean & modern (Inter / System UI), avoid ornate serifs.
+	•	Make everything responsive.
+
+Layout (single page)
+	1.	Header / Nav
+	•	Left: Logo + “Dream W Travel”
+	•	Right: button “Get a Free Quote” (scrolls to Quote Form)
+	•	Sticky on scroll
+	2.	Hero
+	•	H1: “Your next trip, handled.”
+	•	Subtext: “We plan comfortable, stress-free travel for families, couples, and groups.”
+	•	CTA buttons: “Start Your Quote” (scroll to form) and “How It Works” (scroll to services)
+	3.	Services Overview (icon cards)
+	•	Cruise Travel — “Plan unforgettable cruises to top destinations worldwide.”
+	•	International Travel — “Custom itineraries for trips abroad, from city tours to multi-country adventures.”
+	•	Honeymoon Packages — “Romantic getaways tailored to your dream destinations.”
+	•	Family Vacations — “Kid-friendly experiences and convenient travel planning.”
+	•	Group Trips — “Coordinated itineraries for friends, clubs, and organizations.”
+	4.	Activities & Access (two cards side-by-side; stack on mobile)
+	•	Activities (travel icon)
+Link: https://www.viator.com/?pid=P00006875&uid=U00676820&mcid=58086&currency=USD
+Text: “Discover tours, activities, and experiences worldwide.”
+Open in new tab.
+	•	Access (ticket icon)
+Link: https://wendyhuang.goldentickets.com/category/concerts-tickets
+Text: “Get exclusive tickets to concerts and special events.”
+Open in new tab.
+	5.	Quote Form (on a light card with black text)
+	•	Fields:
+Required: name, email, origin, destination, startDate, endDate, travelers
+Optional: hotel, budget, notes
+Consent checkbox: consent (must be checked)
+	•	Validation: all required; endDate >= startDate; basic email pattern.
+	•	Success message (on page):
+“Thanks! We’ve emailed a confirmation to {email} and will follow up within 24–48 hours.”
+(Show this only if the request succeeds.)
+	•	Error message:
+“We couldn’t send the email. Please check your details or try again in a moment.”
+(Do not wipe user input on error.)
+	•	Anti-spam: add a hidden honeypot field named website (must stay empty).
+Add a soft client-side rate limit: max 3 submissions per browser per hour using localStorage timestamps.
+	6.	Business Info
+	•	Email: dreamwtravelservices@gmail.com
+	•	Business Hours: 9:00 AM – 8:00 PM Monday to Friday
+	•	Show as a clean info block with small icons (no phone number).
+	7.	Footer (black background, white text)
+	•	Contact: email (clickable mailto), business hours
+	•	Social (icon links, open in new tab):
+	•	Instagram: https://www.instagram.com/dreamw.travel?igsh=ZXRkeGg3OHVjNmJm&utm_source=qr
+	•	Facebook: https://www.facebook.com/share/16wAgEGiip/?mibextid=wwXIfr
+	•	TikTok: https://www.tiktok.com/@dream.w.travel?_t=ZT-8yuafxe7pwE&_r=1
+	•	About: “We’re a travel agency focused on comfortable, stress-free trips for everyone. Just thoughtful planning.”
+
+Form submission (Formspree — NO SMTP)
+	•	Use Formspree endpoint: https://formspree.io/f/meozdbzd with method="POST".
+	•	Owner notification: goes to dreamwtravelservices@gmail.com (configured in Formspree).
+	•	Set Reply-To to the customer’s email.
+	•	If Formspree autoresponder is available on the account, enable a friendly customer confirmation using the following template (otherwise skip autoresponder and rely on the on-page success message):
+	•	Subject: We received your request — Dream W Travel
+	•	Body:Hi {name},
+
+Thanks for reaching out to Dream W Travel! We’ve received your trip details:
+• From: {origin}
+• To: {destination}
+• Dates: {startDate} → {endDate}
+• Travelers: {travelers}
+• Hotel: {hotel}
+• Budget: {budget}
+• Notes: {notes}
+
+Our hours are 9:00 AM – 8:00 PM Monday – Friday. We’ll email you within 24–48 hours.
+— Dream W Travel
+Explore the World, Live Your Dream
+
+Open external links in a new tab with target="_blank" and rel="noopener noreferrer".
+	•	Use official brand icons for Instagram/Facebook/TikTok (white on black footer; subtle hover).
+	•	Keep code organized and well-commented so I can edit copy easily.

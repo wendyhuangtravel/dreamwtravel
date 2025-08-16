@@ -1,0 +1,21 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="25" cy="25" r="25" fill="#2563eb"/>
+  
+  <!-- Airplane icon -->
+  <path d="M35 22L32 19L25 22V15C25 13.9 24.1 13 23 13S21 13.9 21 15V22L14 19L11 22L21 25L11 28L14 31L21 28V35C21 36.1 21.9 37 23 37S25 36.1 25 35V28L32 31L35 28L25 25L35 22Z" fill="white"/>
+  
+  <!-- Cloud elements for travel theme -->
+  <circle cx="12" cy="12" r="3" fill="white" opacity="0.6"/>
+  <circle cx="38" cy="38" r="2.5" fill="white" opacity="0.6"/>
+  <circle cx="42" cy="15" r="2" fill="white" opacity="0.4"/>
+  
+  <!-- Subtle gradient overlay -->
+  <defs>
+    <radialGradient id="logoGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.1);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0);stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <circle cx="25" cy="25" r="25" fill="url(#logoGradient)"/>
+</svg>
