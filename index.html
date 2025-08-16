@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream W Travel - Explore the World, Live Your Dream</title>
+    <meta name="description" content="Dream W Travel offers comfortable, stress-free travel planning for families, couples, and groups. Cruise travel, international trips, honeymoon packages, and more.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-section">
+                    <img src="assets/logo-circle.png" alt="Dream W Travel Logo" class="logo">
+                    <span class="brand-name">Dream W Travel</span>
+                </div>
+                <button class="cta-button" onclick="scrollToSection('quote-form')">Get a Free Quote</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background" role="img" aria-label="Clouds drifting among mountains under a blue sky"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-panel">
+                    <h1>Travel made simple.</h1>
+                    <p>We plan comfortable, stress-free travel for families, couples, and groups.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('quote-form')">Start Your Quote</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('services')">How It Works</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Travel Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>Cruise Travel</h3>
+                    <p>Plan unforgettable cruises to top destinations worldwide.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>International Travel</h3>
+                    <p>Custom itineraries for trips abroad, from city tours to multi-country adventures.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Honeymoon Packages</h3>
+                    <p>Romantic getaways tailored to your dream destinations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Family Vacations</h3>
+                    <p>Kid-friendly experiences and convenient travel planning.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Group Trips</h3>
+                    <p>Coordinated itineraries for friends, clubs, and organizations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities & Access -->
+    <section class="activities-access">
+        <div class="container">
+            <h2>Explore More</h2>
+            <div class="access-grid">
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Activities</h3>
+                    <p>Discover tours, activities, and experiences worldwide.</p>
+                    <a href="https://www.viator.com/?pid=P00006875&uid=U00676820&mcid=58086&currency=USD" 
+                       target="_blank" rel="noopener noreferrer" class="access-link">
+                        Explore Activities <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Access</h3>
+                    <p>Get exclusive tickets to concerts and special events.</p>
+                    <a href="https://wendyhuang.goldentickets.com/category/concerts-tickets" 
+                       target="_blank" rel="noopener noreferrer" class="access-link">
+                        Get Tickets <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section class="quote-section" id="quote-form">
+        <div class="container">
+            <div class="quote-card">
+                <h2>Get Your Free Travel Quote</h2>
+                <p>Tell us about your dream trip and we'll create a personalized quote for you.</p>
+                
+                <form id="quoteForm" action="https://formspree.io/f/meozdbzd" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="origin">Departing From *</label>
+                            <input type="text" id="origin" name="origin" placeholder="City, State/Country" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination *</label>
+                            <input type="text" id="destination" name="destination" placeholder="Where would you like to go?" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="startDate">Start Date *</label>
+                            <input type="date" id="startDate" name="startDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="endDate">End Date *</label>
+                            <input type="date" id="endDate" name="endDate" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="travelers">Number of Travelers *</label>
+                            <select id="travelers" name="travelers" required>
+                                <option value="">Select...</option>
+                                <option value="1">1 Traveler</option>
+                                <option value="2">2 Travelers</option>
+                                <option value="3">3 Travelers</option>
+                                <option value="4">4 Travelers</option>
+                                <option value="5">5 Travelers</option>
+                                <option value="6+">6+ Travelers</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="hotel">Hotel Preference</label>
+                            <select id="hotel" name="hotel">
+                                <option value="">No preference</option>
+                                <option value="budget">Budget-friendly</option>
+                                <option value="mid-range">Mid-range</option>
+                                <option value="luxury">Luxury</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="budget">Budget Range (Optional)</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-2000">Under $2,000</option>
+                            <option value="2000-5000">$2,000 - $5,000</option>
+                            <option value="5000-10000">$5,000 - $10,000</option>
+                            <option value="10000-plus">$10,000+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="notes">Additional Notes</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Tell us about any special requirements, interests, or questions..."></textarea>
+                    </div>
+                    
+                    <!-- Hidden honeypot field for spam protection -->
+                    <input type="text" name="website" style="display: none;">
+                    
+                    <div class="form-group full-width">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I consent to Dream W Travel contacting me about my travel request and agree to receive travel-related communications.</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary full-width" id="submitBtn">
+                        Send My Quote Request
+                    </button>
+                </form>
+                
+                <div id="formMessage" class="form-message" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Info -->
+    <section class="business-info">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <a href="mailto:dreamwtravelservices@gmail.com">dreamwtravelservices@gmail.com</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Business Hours</h3>
+                        <p>9:00 AM – 8:00 PM<br>Monday to Friday</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dream W Travel</h3>
+                    <p>We're a travel agency focused on comfortable, stress-free trips for everyone. Just thoughtful planning.</p>
+                    <p class="tagline">Explore the World, Live Your Dream</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><a href="mailto:dreamwtravelservices@gmail.com">dreamwtravelservices@gmail.com</a></p>
+                    <p>9:00 AM – 8:00 PM Monday to Friday</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/dreamw.travel?igsh=ZXRkeGg3OHVjNmJm&utm_source=qr" 
+                           target="_blank" rel="noopener noreferrer" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/16wAgEGiip/?mibextid=wwXIfr" 
+                           target="_blank" rel="noopener noreferrer" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@dream.w.travel?_t=ZT-8yuafxe7pwE&_r=1" 
+                           target="_blank" rel="noopener noreferrer" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dream W Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
