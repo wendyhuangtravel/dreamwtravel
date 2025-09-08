@@ -82,7 +82,7 @@ Thanks for reaching out to Dream W Travel! We’ve received your trip details:
 • Budget: {budget}
 • Notes: {notes}
 
-Our hours are 9:00 AM – 8:00 PM Monday – Friday. We’ll email you within 24–48 hours.
+Our hours are 8:00 AM – 5:00 PM Monday – Friday. We’ll email you within 24–48 hours.
 — Dream W Travel
 Explore the World, Live Your Dream
 
